@@ -30,7 +30,7 @@ The main features of the msx-joypc v1 adapter are:
 
 ## [Hardware](hardware/kicad/)
 
-The msx-joypc v1 adapter uses an [Atmega328p](https://en.wikipedia.org/wiki/ATmega328) to convert the [PC gameport joystick signalling](https://store.curiousinventor.com/guides/PS2) to the [MSX joystick standard signalling](https://www.msx.org/wiki/Joystick_control).
+The msx-joypc v1 adapter uses an [Atmega328p](https://en.wikipedia.org/wiki/ATmega328) to convert the [PC gameport joystick signalling](https://www.epanorama.net/documents/joystick/pc_joystick.html) to the [MSX joystick standard signalling](https://www.msx.org/wiki/Joystick_control).
 
 A two-sided printed circuit board (PCB) is used to put together all components:
 * An Atmega328p as the main MCU, running at 5V 16MHz
@@ -139,8 +139,6 @@ A simple acrylic enclosure design for the project is provided to protect the ele
 >
 
 The enclosure uses a 3mm acrylic sheet.
-
-[<img src="images/msx-joypc-v1-with-acrylic-enclosure.png" width="400"/>](images/msx-joypc-v1-with-acrylic-enclosure.png)
 
 ## References
 
