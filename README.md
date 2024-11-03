@@ -107,6 +107,8 @@ Power for the PC gameport joystick is provided by the MSX +5V rail.
 
 [Bill Of Materials (BoM)](https://html-preview.github.io/?url=https://raw.githubusercontent.com/herraa1/msx-joypc-v1/main/hardware/kicad/msx-joypc-v1-build1/bom/ibom.html)
 
+[KiCanvas Viewer](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fherraa1%2Fmsx-joypc-v1%2Ftree%2Fmain%2Fhardware%2Fkicad%2Fmsx-joypc-v1-build1)
+
 This is the first build of the adapter.
 
 > [!WARNING]
