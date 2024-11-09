@@ -8,6 +8,20 @@
  * SPDX-URL: https://spdx.org/licenses/GPL-2.0-only.html
  *
  */
+ /*
+
+Built using Arduino 2.2.1
+Boards:
+- Minicore 2.2.2
+  - Board: Atmega328
+  - BOD 1.8V
+  - Bootloader: Yes (UART0)
+  - Clock: External 16MHz
+  - EEPROM: Retained
+  - Compiler LTO: Disabled
+  - Variant: 328P/328PA
+
+  */
 //
 // Based on Necroware's GamePort adapter firmware.
 // Copyright (C) 2021 Necroware
@@ -35,6 +49,8 @@
 #include "Logitech.h"
 #include "Sidewinder.h"
 #include "ThrustMaster.h"
+
+#include <avr/wdt.h>
 
 static Joystick *createJoystick() {
 
@@ -74,6 +90,8 @@ static Joystick *createJoystick() {
 }
 
 void setup() {
+    MCUSR = 0;
+    wdt_disable();
     // DEBUG information: Debugging is turned off by default
     // Comment the "NDEBUG" line in "Utilities.h" to enable logging to the serial monitor
     initLog();
