@@ -105,16 +105,11 @@ Power for the PC gameport joystick is provided by the MSX +5V rail.
 
 ### [Build1](hardware/kicad/msx-joypc-v1-build1)
 
-[Bill Of Materials (BoM)](https://html-preview.github.io/?url=https://raw.githubusercontent.com/herraa1/msx-joypc-v1/main/hardware/kicad/msx-joypc-v1-build1/bom/ibom.html)
-
-[KiCanvas Viewer](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fherraa1%2Fmsx-joypc-v1%2Ftree%2Fmain%2Fhardware%2Fkicad%2Fmsx-joypc-v1-build1)
-
-This is the first build of the adapter.
-
 > [!WARNING]
-> Board prototypes for this build have been ordered, but not built yet.
+> This build is broken. I messed up the ISP header when I reordered some pins before ordering the boards. Meh.
+> It can be fixed by cutting some traces, unmasking some tracks and using some jump wire.
 >
-> Build at your own risk.
+> Do NOT build. Wait for the next build.
 >
 
 ## [Firmware](firmware/msx-joypc-v1/)
