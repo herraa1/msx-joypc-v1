@@ -7,11 +7,9 @@ Connect [PC gameport joysticks](https://en.wikipedia.org/wiki/Game_port) to [MSX
 > [!WARNING]
 > This is a work in progress project.
 >
-> No tested boards yet, just an initial breadboarding.
->
 > No build instructions are yet provided.
 >
-> Build at your own risk.
+> Do NOT build for now.
 >
 
 ## Introduction
@@ -106,11 +104,14 @@ Power for the PC gameport joystick is provided by the MSX +5V rail.
 ### [Build1](hardware/kicad/msx-joypc-v1-build1)
 
 > [!WARNING]
-> This build is broken. I messed up the ISP header when I reordered some pins before ordering the boards. Meh.
-> It can be fixed by cutting some traces, unmasking some tracks and using some jump wire.
+> This build is broken. I messed up the ICSP header after a last-minute pin reordering. Meh.
+> It can be fixed by cutting two traces, exposing two traces and using a pair of jumper wires to bridge the necessary points.
 >
 > Do NOT build. Wait for the next build.
 >
+
+[<img src="images/msx-joypc-v1-build1-front-fix.png" width="256"/>](images/msx-joypc-v1-build1-front-fix.png)
+[<img src="images/msx-joypc-v1-build1-back-fix.png" width="256"/>](images/msx-joypc-v1-build1-back-fix.png)
 
 ## [Firmware](firmware/msx-joypc-v1/)
 
