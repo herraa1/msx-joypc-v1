@@ -1,0 +1,203 @@
+(footprint "PSX_Pad_Connector"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Through hole angled pin header, 1x09, 2.54mm pitch, 6mm pin length, single row")
+	(tags "Through hole angled pin header THT 1x09 2.54mm single row")
+	(property "Reference" "J1"
+		(at 0 -26 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "077ee31e-d918-4a83-adc7-a93e5085660a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TO_PSX_PAD"
+		(at 4.385 23.09 180)
+		(layer "F.Fab")
+		(uuid "cd01eecb-edb1-452c-bfd6-e0c683d539eb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e4d54ab5-324f-49bc-bbee-94cd8890b73e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6d221bf8-279e-472f-a32d-261314f622f2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b4f7310d-7dfc-4540-8972-e909c239751d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_poly
+		(pts
+			(xy -9.5 -22) (xy 8.5 -22) (xy 8.5 22) (xy -9.5 22)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "Dwgs.User")
+		(uuid "49ed3d3d-064b-4ce7-a8fc-223ffff2658c")
+	)
+	(fp_line
+		(start -16 -23)
+		(end -16 22.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fa581272-06cd-4ea5-9448-96b62b6ad595")
+	)
+	(fp_line
+		(start -16 22.6)
+		(end 10.55 22.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "79c6ca61-f11a-4b00-b624-9ad349037418")
+	)
+	(fp_line
+		(start 10.55 -23)
+		(end -16 -23)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "50824a93-b8a8-410b-95bf-5d51ddd89698")
+	)
+	(fp_line
+		(start 10.55 22.6)
+		(end 10.55 -23)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5b156fef-824c-431c-8457-41c64d44ae35")
+	)
+	(pad "1" thru_hole rect
+		(at -14 -16)
+		(size 1.7 1.9)
+		(drill oval 1 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "61151881-3f4c-4562-bf73-e57377a9f895")
+	)
+	(pad "2" thru_hole oval
+		(at -14 -12)
+		(size 1.7 1.9)
+		(drill oval 1 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7614bd75-e8ff-49f0-95f9-22630d52a6b2")
+	)
+	(pad "3" thru_hole oval
+		(at -14 -8)
+		(size 1.7 1.9)
+		(drill oval 1 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1aefb4d2-1176-4624-b49b-eb8dc81863c2")
+	)
+	(pad "4" thru_hole oval
+		(at -14 -4)
+		(size 1.7 1.9)
+		(drill oval 1 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "cca564e6-dc41-4e7e-b394-a0ee36d2e08f")
+	)
+	(pad "5" thru_hole oval
+		(at -14 0)
+		(size 1.7 1.9)
+		(drill oval 1 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5761bc73-e79d-4328-9bd8-0018353bf1fa")
+	)
+	(pad "6" thru_hole oval
+		(at -14 4)
+		(size 1.7 1.9)
+		(drill oval 1 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a070ea3c-732b-46ef-be2a-44300399ace7")
+	)
+	(pad "7" thru_hole oval
+		(at -14 8)
+		(size 1.7 1.9)
+		(drill oval 1 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "698d813b-b961-4528-b128-ebfce5b66731")
+	)
+	(pad "8" thru_hole oval
+		(at -14 12)
+		(size 1.7 1.9)
+		(drill oval 1 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c93b5986-ef7f-46e1-8172-1ae131054e81")
+	)
+	(pad "9" thru_hole oval
+		(at -14 16)
+		(size 1.7 1.9)
+		(drill oval 1 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "61a1e51b-d78d-4920-a69e-c6de7b809068")
+	)
+	(model "${KIPRJMOD}/compo/3dmodels/ps-connector-female/pritesh.stp"
+		(offset
+			(xyz 0.5 0 2.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 180 90)
+		)
+	)
+)

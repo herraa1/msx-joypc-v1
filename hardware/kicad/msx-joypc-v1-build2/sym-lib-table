@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "PsxControllerShield")(type "KiCad")(uri "${KIPRJMOD}/compo/PsxControllerShield.kicad_sym")(options "")(descr ""))
+  (lib (name "my_components")(type "KiCad")(uri "${KIPRJMOD}/compo/my_components.kicad_sym")(options "")(descr ""))
+)
