@@ -92,20 +92,20 @@ static Joystick *createJoystick() {
 void setup() {
     MCUSR = 0;
     wdt_disable();
+
     // DEBUG information: Debugging is turned off by default
     // Comment the "NDEBUG" line in "Utilities.h" to enable logging to the serial monitor
     initLog();
-    log("msx-joypc-v1 20240822_1");
+    log("msx-joypc-v1 20241110_1");
 }
 
 void loop() {
+    static auto msxJoystick = [] {
+        MsxJoystick msxJoystick;
+        msxJoystick.init(createJoystick());
+        return msxJoystick;
+    }();
 
-  static auto msxJoystick = [] {
-      MsxJoystick msxJoystick;
-      msxJoystick.init(createJoystick());
-      return msxJoystick;
-  }();
-
-  msxJoystick.update();
-  delay(1);
+    msxJoystick.update();
+    delay(2);
 }

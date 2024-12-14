@@ -60,7 +60,7 @@ struct GamePort<10> {
 // Analog: Joystick2 X-Axis 
 template <>
 struct GamePort<11> {
-  enum { pin = A7 };
+  enum { pin = 7 };
 };
 
 // Analog: Midi OUT
@@ -72,7 +72,7 @@ struct GamePort<11> {
 // Analog: Joystick2 Y-Axis 
 template <>
 struct GamePort<13> {
-  enum { pin = A6 };
+  enum { pin = 6 };
 };
 
 // Analog: Button #4

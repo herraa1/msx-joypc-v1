@@ -145,7 +145,7 @@ public:
 
     uint8_t joystick_signals = 0x00;
 
-    if (m_state == State::BOOT_CONNECTED_CONNECTED) {
+    if (m_state != State::BOOT_CONNECTED_UNCONNECTED_CONFIRMED && m_state != State::BOOT_UNCONNECTED_UNCONNECTED_CONFIRMED) {
         if ((state.buttons & 0x01) || (state.buttons & 0x04))
             joystick_signals |= (1 << MsxPortPins::MSX_JOYSTICK_TRIGGER1);
 
