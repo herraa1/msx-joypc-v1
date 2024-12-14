@@ -5,11 +5,8 @@
 Connect [PC gameport joysticks](https://en.wikipedia.org/wiki/Game_port) to [MSX computers](https://www.msx.org/wiki/).
 
 > [!WARNING]
-> This is a work in progress project.
 >
-> No build instructions are yet provided.
->
-> Do NOT build for now.
+> No build instructions are yet provided, but if you are brave enough go for the [recommended build](#recommended-build).
 >
 
 ## Introduction
@@ -41,8 +38,8 @@ A two-sided printed circuit board (PCB) is used to put together all components:
 * An ICSP header is provided for burning a bootloader or to flash the chip using a hardware programmer
 * A DIP switch to configure the adapter for compatibility with different PC joysticks
 
-[<img src="images/msx-joypc-v1-build1-front-render.png" width="512"/>](images/msx-joypc-v1-build1-front-render.png)
-[<img src="images/msx-joypc-v1-build1-back-render.png" width="512"/>](images/msx-joypc-v1-build1-back-render.png)
+[<img src="images/msx-joypc-v1-build2-front-render.png" width="512"/>](images/msx-joypc-v1-build2-front-render.png)
+[<img src="images/msx-joypc-v1-build2-back-render.png" width="512"/>](images/msx-joypc-v1-build2-back-render.png)
 
 Connection to the MSX general purpose I/O port is implemented using a DE9 joystick extension cable with a female DE9 connector on one side and a loose end on the other side.
 The MSX joystick extension cable loose end is wired according to the following pinout mapping.
@@ -101,13 +98,30 @@ The PC gameport joystick uses 5V for power and logic.
 
 Power for the PC gameport joystick is provided by the MSX +5V rail.
 
-### [Build1](hardware/kicad/msx-joypc-v1-build1)
+### Recommended Build
+
+Please, use [msx-joypc-v1 Build2](#build2) for making new boards.
+
+### [Build2](hardware/kicad/msx-joypc-v1-build2)
+
+[Bill Of Materials (BoM)](https://html-preview.github.io/?url=https://raw.githubusercontent.com/herraa1/msx-joypc-v1/main/hardware/kicad/msx-joypc-v1-build2/bom/ibom.html)
+
+This build fixes the following errata:
+- make the ICSP header work again
+- add (optional) RN1 and RN2 4k7 pull-downs to joystick signals to avoid spurious button joystick actions while powering up
+
+This board has been successfully built and works fine.
+
+[<img src="images/msx-joypc-v1-build2-front.png" width="256"/>](images/msx-joypc-v1-build2-front.png)
+[<img src="images/msx-joypc-v1-build2-back.png" width="256"/>](images/msx-joypc-v1-build2-back.png)
+
+### Build1
 
 > [!WARNING]
 > This build is broken. I messed up the ICSP header after a last-minute pin reordering. Meh.
 > It can be fixed by cutting two traces, exposing two traces and using a pair of jumper wires to bridge the necessary points.
 >
-> Do NOT build. Wait for the next build.
+> Do NOT build. Use the [recommended build](#recommended-build) instead.
 >
 
 [<img src="images/msx-joypc-v1-build1-front-fix.png" width="256"/>](images/msx-joypc-v1-build1-front-fix.png)
