@@ -4,7 +4,7 @@
 
 Connect [PC gameport joysticks](https://en.wikipedia.org/wiki/Game_port) to [MSX computers](https://www.msx.org/wiki/).
 
-> [!NOTICE]
+> [!NOTE]
 >
 > No build instructions are yet provided, but if you are brave enough go for the [recommended build](#recommended-build).
 >
