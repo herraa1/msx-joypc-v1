@@ -4,7 +4,7 @@
 
 Connect [PC gameport joysticks](https://en.wikipedia.org/wiki/Game_port) to [MSX computers](https://www.msx.org/wiki/).
 
-> [!WARNING]
+> [!NOTICE]
 >
 > No build instructions are yet provided, but if you are brave enough go for the [recommended build](#recommended-build).
 >
@@ -112,8 +112,11 @@ This build fixes the following errata:
 
 This board has been successfully built and works fine.
 
-[<img src="images/msx-joypc-v1-build2-front.png" width="256"/>](images/msx-joypc-v1-build2-front.png)
-[<img src="images/msx-joypc-v1-build2-back.png" width="256"/>](images/msx-joypc-v1-build2-back.png)
+[<img src="images/msx-joypc-v1-build2-bare-pcb-front.png" width="320"/>](images/msx-joypc-v1-build2-bare-pcb-front.png)
+[<img src="images/msx-joypc-v1-build2-bare-pcb-back.png" width="320"/>](images/msx-joypc-v1-build2-bare-pcb-back.png)
+
+[<img src="images/msx-joypc-v1-build2-assembled-pcb-front.png" width="320"/>](images/msx-joypc-v1-build2-assembled-pcb-front.png)
+[<img src="images/msx-joypc-v1-build2-assembled-pcb-back.png" width="320"/>](images/msx-joypc-v1-build2-assembled-pcb-back.png)
 
 ### Build1
 
@@ -142,15 +145,51 @@ Those elements' status are processed by the msx-joypc firmware and transformed i
 
 ### Acrylic
 
-A simple acrylic enclosure design for the project is provided to protect the electronic components and provide strain relief for the extension cords.
-
-> [!WARNING]
-> Enclosure has not yet been tested.
->
-> Build at your own risk.
->
+A simple acrylic enclosure design for the project is provided to protect the electronic components and provide strain relief for the extension cord.
 
 The enclosure uses a 3mm acrylic sheet.
+
+[<img src="images/msx-joypc-v1-build2-with-enclosure-general-view.png" width="400"/>](images/msx-joypc-v1-build2-with-enclosure-general-view.png)
+
+## Configuration Switches
+
+[<img src="images/msx-joypc-v1-build2-switches.png" width="512"/>](images/msx-joypc-v1-build2-switches.png)
+
+Joystick Model               | Buttons | Axes  |  Hat | SW1-4 | Protocol   | Comments
+-----------------------------|---------|-------|------|-------|------------|------------------------------------
+Generic Analog               | 2       | 2     | 0    | 0000  | Analogue   |
+Generic Analog               | 4       | 2     | 0    | 1000  | Analogue   |
+Generic Analog               | 4       | 3     | 0    | 0100  | Analogue   | 3rd Axis is throttle
+Generic Analog               | 4       | 4     | 0    | 1100  | Analogue   |
+CH FlightStick               | 4       | 4     | 1    | 0010  | Analogue   |
+CH F16 Combat Stick          | 10      | 3     | 1    | 0110  | Analogue   |
+ThrustMaster                 | 4       | 3     | 1    | 1010  | Analogue   |
+Sidewinder GamePad           | 10      | 2     | 0    | 1110  | Sidewinder |
+Sidewinder 3D Pro            | 8       | 4     | 1    | 1110  | Sidewinder |
+Sidewinder 3D Pro Plus       | 9       | 4     | 1    | 1110  | Sidewinder | First version of Precision Pro
+Sidewinder Precision Pro     | 9       | 4     | 1    | 1110  | Sidewinder |
+Sidewinder FFB Pro           | 9       | 4     | 1    | 1110  | Sidewinder | FFB not yet implemented
+Sidewinder FFB Wheel         | 8       | 3     | 0    | 1110  | Sidewinder | FFB not yet implemented
+Gravis GamePad Pro           | 10      | 2     | 0    | 0001  | GrIP       |
+Logitech WingMan Extreme     | 6       | 3     | 1    | 1001  | ADI        |
+Logitech CyberMan 2          | 8       | 6     | 0    | 1001  | ADI        |
+Logitech WingMan Interceptor | 9       | 3     | 3    | 1001  | ADI        | 2 hats are mapped as 4 axes
+Logitech ThunderPad Digital  | 8       | 2     | 0    | 1001  | ADI        | Directional buttons mapped as 2 axes
+Logitech WingMan Gamepad     | 11      | 2     | 0    | 1001  | ADI        | Directional buttons mapped as 2 axes
+Logitech WingMan Light       | 2       | 2     | 0    | 0000  | Analogue   |
+
+For an up to date information see [Which joysticks does this adapter support](https://github.com/necroware/gameport-adapter?tab=readme-ov-file#which-joysticks-does-this-adapter-support) on [Necroware's GamePort adapter project](https://github.com/necroware/gameport-adapter).
+
+## LED indicators
+
+[<img src="images/msx-joypc-v1-build2-leds.png" width="512"/>](images/msx-joypc-v1-build2-leds.png)
+
+| **LED**   | **State**      | **Indication** |
+|-----------|----------------|---------------|
+| _POWER_   | Off            | board is not receiving 5V power |
+| _POWER_   | Solid Red      | board is receiving 5V power     |
+| _JoyPort_ | Off            | no PC joystick connected or recognized |
+| _JoyPort_ | Solid Green    | PC joystick connected and ready to use |
 
 ## References
 
